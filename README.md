@@ -1,7 +1,7 @@
 # mediagrab
 Python CLI to download videos from youtube
 
-[![PyPI - Version](https://img.shields.io/pypi/v/mediagrab)](https://pypi.org/project/mediagrab)
+[![PyPI - Version](https://img.shields.io/pypi/v/mediagrab)](https://pypi.org/project/mediagrab/0.0.6)
 [![PyPI - License](https://img.shields.io/pypi/l/mediagrab)](LICENSE)
 
 ## Installation
@@ -23,9 +23,16 @@ mediagrab --help
 
 ### Main functionality
 ```
-mediagrab <url>
+usage: mediagrab [-h] [-d DESTINATION] url
+
+positional arguments:
+  url                   URL of video on YouTube to download
+
+options:
+  -h, --help            show this help message and exit
+  -d DESTINATION, --destination DESTINATION
+                        destination path
 ```
-url - link to a video from YouTube
 
 ## Development setup
 Clone this repository and install packages listed in requirements.txt
