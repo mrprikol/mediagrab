@@ -1,8 +1,8 @@
 # mediagrab
 Python CLI to download videos from youtube
 
-![PyPI - Version](https://img.shields.io/pypi/v/mediagrab)
-![PyPI - License](https://img.shields.io/pypi/l/mediagrab)
+[![PyPI - Version](https://img.shields.io/pypi/v/mediagrab)](https://pypi.org/project/mediagrab)
+[![PyPI - License](https://img.shields.io/pypi/l/mediagrab)](LICENSE)
 
 ## Installation
 You can install the package using following command:
