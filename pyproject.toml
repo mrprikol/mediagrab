@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mediagrab"
-version = "0.0.3"
+version = "0.0.4"
 authors = [{ name = "mrprikol", email = "prikolus@proton.me" }]
 description = "Python CLI for downloading videos from YouTube"
 readme = "README.md"
@@ -15,7 +15,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-license = { file = "LICENSE" }
+license = { text = "MIT License" }
 keywords = ["python", "cli"]
 
 [project.urls]
