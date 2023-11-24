@@ -1,15 +1,12 @@
 import sys
 
-import pytube
+from mediagrab.content import Content
 
 
 def main():
     video_url = sys.argv[1]
-
-    yt = pytube.YouTube(video_url)
-    stream = yt.streams.get_highest_resolution()
-
-    stream.download()
+    video = Content(video_url)
+    video.download()
 
 
 if __name__ == "__main__":
