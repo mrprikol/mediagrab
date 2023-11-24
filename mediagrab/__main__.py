@@ -1,11 +1,10 @@
-import sys
-
 from mediagrab.content import Content
+from mediagrab.parser import parser
 
 
 def main():
-    video_url = sys.argv[1]
-    video = Content(video_url)
+    args: dict = vars(parser.parse_args())
+    video = Content(**args)
     video.download()
 
 
