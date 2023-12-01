@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools >= 61.0"]
+requires = ["setuptools >= 61.0", "setuptools-scm >= 8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -24,5 +24,4 @@ Repository = "https://github.com/mrprikol/mediagrab"
 [project.scripts]
 mediagrab = "mediagrab.__main__:main"
 
-[tool.setuptools.dynamic]
-version = { attr = "mediagrab.__version__" }
+[tool.setuptools_scm]
