@@ -1,4 +1,4 @@
-name: Publish Python distributions to PyPI
+name: Publish Python distributions to PyPI and GitHub Release
 
 on:
   release:
@@ -49,3 +49,16 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
+
+  upload-to-release:
+    name: Upload distributions to the release
+    needs: build-package
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: svenstaro/upload-release-action@v2
+        with:
+          file: dist/*
+          file_glob: true
